@@ -7,6 +7,8 @@ import cn.icartoons.demo.entity.User;
 @Repository
 public interface UserDao {
 
+	void save(User user);
+
 	User findByUsername(String username);
 
 }

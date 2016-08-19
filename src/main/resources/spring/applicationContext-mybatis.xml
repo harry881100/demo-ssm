@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:property-placeholder location="classpath:application.properties" />
+<!-- 	<context:property-placeholder location="classpath:application.properties" /> -->
 
 	<!-- 数据源配置:Druid连接池 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">

@@ -3,6 +3,10 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace必须是Dao接口的全限定名 -->
 <mapper namespace="cn.icartoons.demo.dao.UserDao">
+	<insert id="save" parameterType="cn.icartoons.demo.entity.User">
+		insert into t_user(username,password) values(#{username},#{password});
+	</insert>
+
 	<select id="findByUsername" parameterType="string" resultType="cn.icartoons.demo.entity.User">
 		select * from t_user where username=#{username}
 	</select>

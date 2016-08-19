@@ -11,6 +11,10 @@ import cn.icartoons.demo.entity.User;
 public class UserService {
 	@Resource
 	private UserDao userDao;
+	
+	public void save(User user){
+		userDao.save(user);
+	}
 
 	public User findByUsername(String username) {
 		return userDao.findByUsername(username);
