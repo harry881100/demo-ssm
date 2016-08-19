@@ -20,7 +20,7 @@ public class DemoController extends BaseController{
 	public @ResponseBody String helloworld() {
 		User user = userService.findByUsername("Lucy");
 		System.out.println(user);
-		logger.info("user:{}.",user);
+		logger.info("=user:{}.",user);
 		
 		return "helloworld";
 	}
